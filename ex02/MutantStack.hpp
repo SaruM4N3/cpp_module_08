@@ -1,20 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   easyfind.hpp                                       :+:      :+:    :+:   */
+/*   MutantStack.hpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: zsonie <zsonie@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/05/04 18:25:51 by zsonie            #+#    #+#             */
-/*   Updated: 2026/05/12 03:27:11 by zsonie           ###   ########lyon.fr   */
+/*   Created: 2026/05/11 23:13:40 by zsonie            #+#    #+#             */
+/*   Updated: 2026/05/12 03:27:23 by zsonie           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef EASYFIND_HPP
-#define EASYFIND_HPP
-
-#include <iostream>
-#include <string>
+#ifndef MUTANTSTACK_HPP
+#define MUTANTSTACK_HPP
 
 #define RESET "\033[0m"
 #define RED "\033[31m"
@@ -24,6 +21,7 @@
 #define MAGENTA "\033[35m"
 #define CYAN "\033[36m"
 
-#include "easyfind.tpp"
+#include <stack>
+#include "MutantStack.tpp"
 
 #endif
