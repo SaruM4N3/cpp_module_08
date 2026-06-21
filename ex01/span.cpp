@@ -56,15 +56,11 @@ unsigned int span::shortestSpan()
     std::vector<int> tmp = _array;
     std::sort(tmp.begin(),tmp.end());
     
-    for (std::vector<int>::iterator it = tmp.begin(); it != tmp.end(); it++)
+    for (std::vector<int>::iterator it = tmp.begin(); it != tmp.end() - 1; it++)
     {
         std::vector<int>::iterator next = it;
         ++next;
-        unsigned int diff;
-        if (*next < 0)
-            diff = *it - *next;
-        else
-            diff = *next - *it;
+        unsigned int diff = static_cast<unsigned int>(*next) - static_cast<unsigned int>(*it);
         if (diff < shortest)
             shortest = diff;
     }
@@ -80,7 +76,7 @@ unsigned int span::longestSpan()
     std::sort(tmp.begin(),tmp.end());
 
     
-    unsigned int longest = *(tmp.end()-1) - *tmp.begin();
+    unsigned int longest = static_cast<unsigned int>(*(tmp.end() - 1)) - static_cast<unsigned int>(*tmp.begin());
     
     return longest;
 }
