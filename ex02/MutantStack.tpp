@@ -6,7 +6,7 @@
 /*   By: zsonie <zsonie@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/11 23:13:40 by zsonie            #+#    #+#             */
-/*   Updated: 2026/05/12 03:44:11 by zsonie           ###   ########lyon.fr   */
+/*   Updated: 2026/06/21 21:06:25 by zsonie           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,12 @@ public:
     }
     iterator end(){
         return this->c.end();
+    }
+	const_iterator cbegin(){
+        return this->c.cbegin();
+    }
+    const_iterator cend(){
+        return this->c.cend();
     }
 };
 
